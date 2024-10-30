@@ -12,4 +12,5 @@ Here are the rules for the Simon Says Game:
 8. Your score is the number of rounds you successfully completed.
 9. Try to beat your high score, which is saved and displayed after each game.
 10. To play again after a game over, simply click the "Play" button in the center.
+
 Remember, concentration and a good memory are key to success in this game. Good luck!

@@ -121,7 +121,7 @@ p {
   margin: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 560px) {
   #child-1 {
     width: 80vmin;
     height: 80vmin;
@@ -138,6 +138,7 @@ p {
 
   h1 {
     margin: 10px;
+    margin-bottom: 50px;
   }
 
   h2 {

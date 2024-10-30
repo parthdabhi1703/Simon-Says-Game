@@ -132,11 +132,6 @@ function checkAns(idx) {
             updateHighScoreDisplay();
         }
 
-        // Play all sounds rapidly for game over effect
-        buttonSounds.forEach((sound, index) => {
-            setTimeout(() => sound.play(), index * 200);
-        });
-
         // Flash all buttons red
         buttons.forEach(btn => {
             let originalColor = btn.style.backgroundColor;

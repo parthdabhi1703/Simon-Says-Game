@@ -92,7 +92,7 @@ function levelUp() {
     // Play the sequence after a short delay
     setTimeout(() => {
         playSequence();
-    }, 800);
+    }, 500);
 }
 
 // Function to play the entire sequence
@@ -116,7 +116,7 @@ function checkAns(idx) {
         if (userSeq.length === gameSeq.length) {
             // Disable buttons during sequence playback
             buttons.forEach(btn => btn.style.pointerEvents = "none");
-            setTimeout(levelUp, 1000);
+            setTimeout(levelUp, 800);
         }
     } else {
         msg.innerText = "Game Over!";
@@ -131,17 +131,6 @@ function checkAns(idx) {
             saveHighScore();
             updateHighScoreDisplay();
         }
-
-        // Flash all buttons red
-        buttons.forEach(btn => {
-            let originalColor = btn.style.backgroundColor;
-            btn.style.backgroundColor = "red";
-            btn.style.opacity = "1";
-            setTimeout(() => {
-                btn.style.backgroundColor = originalColor;
-                btn.style.opacity = "0.3";
-            }, 200);
-        });
         reset();
     }
 }

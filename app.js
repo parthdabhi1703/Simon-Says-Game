@@ -64,7 +64,7 @@ function gameFlash(btn) {
     buttonSounds[parseInt(btn.id)].play();
     setTimeout(function() {
         btn.style.opacity = "0.3";
-    }, 800);
+    }, 500);
 }
 
 // Function to flash button and play sound for user clicks
@@ -116,7 +116,7 @@ function checkAns(idx) {
         if (userSeq.length === gameSeq.length) {
             // Disable buttons during sequence playback
             buttons.forEach(btn => btn.style.pointerEvents = "none");
-            setTimeout(levelUp, 800);
+            setTimeout(levelUp, 500);
         }
     } else {
         msg.innerText = "Game Over!";

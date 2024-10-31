@@ -6,7 +6,7 @@
 
 body {
   color: white;
-  background-color: rgb(25, 25, 25);
+  background-color: #111212;
 }
 
 h1 {
@@ -32,7 +32,6 @@ h2 {
   overflow: hidden;
   border-radius: 8px; /* Add some rounding to the corners */
   transition: all 0.2s ease; /* Add a transition for smoother effects */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Default shadow for the button */
 }
 
 .simon-1 {
@@ -93,12 +92,12 @@ h2 {
 
 #child-1 {
   position: relative;
-  border-radius: 50%;
+  border-radius: 100%;
   margin: auto;
   padding: 5vmin;
   width: 65vmin;
   height: 65vmin;
-  background: rgba(255, 255, 255, 0.5);
+  background: grey;
 }
 
 #child-2 {
@@ -119,6 +118,12 @@ h2 {
   background: rgb(21, 175, 155);
   box-shadow: 0px 0px 8px 0 rgba(16, 193, 175, 0.5);
   cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+#circ:active {
+  transform: scale(0.95);
+  box-shadow: 0px 0px 10px 0 rgb(16, 193, 175, 0.8);
 }
 
 #msg {
@@ -148,15 +153,6 @@ p {
   #child-1 {
     width: 80vmin;
     height: 80vmin;
-  }
-
-  #circ {
-    transition: 0.1s ease-in-out;
-  }
-
-  #circ:active {
-    transform: scale(0.95);
-    box-shadow: 0px 0px 10px 0 rgb(16, 193, 175, 0.8);
   }
 
   h1 {

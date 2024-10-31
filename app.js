@@ -73,7 +73,7 @@ function userFlash(btn) {
     buttonSounds[parseInt(btn.id)].play();
     setTimeout(function() {
         btn.style.opacity = "0.3";
-    }, 400);
+    }, 200);
 }
 
 function levelUp() {
@@ -92,7 +92,7 @@ function levelUp() {
     // Play the sequence after a short delay
     setTimeout(() => {
         playSequence();
-    }, 600);
+    }, 500);
 }
 
 // Function to play the entire sequence

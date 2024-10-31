@@ -64,7 +64,7 @@ function gameFlash(btn) {
     buttonSounds[parseInt(btn.id)].play();
     setTimeout(function() {
         btn.style.opacity = "0.3";
-    }, 500);
+    }, 800);
 }
 
 // Function to flash button and play sound for user clicks

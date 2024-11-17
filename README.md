@@ -1,5 +1,5 @@
 # Simon-Says-Game
-## Play here 👉 https://github.com/parthdabhi1703/parthdabhi1703
+**Play here** 👉 https://github.com/parthdabhi1703/parthdabhi1703
  
 Simon Says Game is a stylish, responsive implementation of the classic memory challenge built with HTML, CSS, and JavaScript. It features a sleek circular interface with color-coded buttons, each producing unique sounds for an immersive experience. The game offers progressive difficulty, visual and audio feedback, and adapts seamlessly to various screen sizes. With dark mode aesthetics, custom animations, and high score tracking using localStorage, this web-based version provides an engaging and accessible gaming experience across devices. Players can easily start the game, follow expanding sequences, and test their memory skills in this modern twist on a timeless classic, perfect for quick mental exercises or extended play sessions.
 

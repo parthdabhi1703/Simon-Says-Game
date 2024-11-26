@@ -61,19 +61,22 @@ document.querySelector("#circ").addEventListener("click", function() {
 // Function to flash button and play sound for game sequence
 function gameFlash(btn) {
     btn.style.opacity = "1";
-    buttonSounds[parseInt(btn.id)].play();
-    setTimeout(function() {
+    const sound = buttonSounds[parseInt(btn.id)];
+    sound.currentTime = 0; // Reset playback position
+    sound.play();
+    setTimeout(() => {
         btn.style.opacity = "0.3";
     }, 500);
 }
 
-// Function to flash button and play sound for user clicks
 function userFlash(btn) {
     btn.style.opacity = "1";
-    buttonSounds[parseInt(btn.id)].play();
-    setTimeout(function() {
+    const sound = buttonSounds[parseInt(btn.id)];
+    sound.currentTime = 0; // Reset playback position
+    sound.play();
+    setTimeout(() => {
         btn.style.opacity = "0.3";
-    }, 300);
+    }, 200);
 }
 
 function levelUp() {

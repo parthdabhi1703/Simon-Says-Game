@@ -73,7 +73,7 @@ function userFlash(btn) {
     buttonSounds[parseInt(btn.id)].play();
     setTimeout(function() {
         btn.style.opacity = "0.3";
-    }, 200);
+    }, 300);
 }
 
 function levelUp() {
